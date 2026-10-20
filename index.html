@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudentAI – Your AI Tutor for Math, Physics and Chemistry</title>
+<meta name="description" content="StudentAI is a personal AI tutor for Grades 6 to 12. Ask by text, voice or photo, in 7 languages, and keep learning offline.">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#6d4aff">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="toast"></div>
+<nav class="nav">
+<a class="brand" href="#home"><span class="mark">S</span>StudentAI</a>
+<div class="links"><a href="#features">Features</a><a href="#subjects">Subjects</a><a href="#tutor">Tutor</a><a href="#tips">Study tips</a><a href="#faq">FAQ</a></div>
+<div class="tools"><span class="pill" id="net" style="display:none">📴 Offline</span>
+<button class="ico" id="acs" aria-label="Change text size" title="Text size">A+</button>
+<button class="ico" id="acd" aria-label="Dyslexia-friendly font" title="Dyslexia-friendly font">Aa</button>
+<button class="ico" id="ach" aria-label="High contrast" title="High contrast">◐</button>
+<button class="ico" id="th" aria-label="Dark mode" title="Dark mode">🌙</button>
+<a class="btn" href="#tutor">Start learning</a></div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div><span class="tag">🚀 AI tutor for Grades 6–12</span>
+<h1>Learn Math, Physics &amp; Chemistry with your own <span class="grad">AI tutor</span></h1>
+<p class="lead">Ask by typing, speaking or sending a photo of your homework. Get step-by-step help in your language, practise every day, and keep learning even without internet.</p>
+<div class="cta"><a class="btn" href="#tutor">Ask your first question</a><a class="btn ghost" href="#features">See features</a></div>
+<div class="stats"><div><b>Grades 6–12</b><span>School syllabus</span></div><div><b>7 languages</b><span>With voice</span></div><div><b>Offline</b><span>Lessons and quizzes</span></div></div></div>
+<div class="demo" aria-hidden="true">
+<div class="dc a"><small>🧑‍🎓 You</small>Solve 3x + 7 = 22</div>
+<div class="dc b"><small>🤖 StudentAI</small>1. Subtract 7: 3x = 15<br>2. Divide by 3: x = 5 ✔</div>
+<div class="dc c"><small>🎯 Practice</small>Try: 4x − 3 = 17</div></div>
+</div></header>
+
+<section id="features"><div class="wrap"><div class="sh"><h2>Everything a student needs, in one place</h2><p>Built for school subjects, with tools that teach instead of only giving answers.</p></div>
+<div class="grid g3">
+<div class="fc"><div class="fi" style="background:linear-gradient(135deg,#6d4aff,#8b7bff)">💬</div><h3>Text, voice and photo</h3><p>Type a doubt, speak it, or upload a photo of handwriting or a textbook page.</p></div>
+<div class="fc"><div class="fi" style="background:linear-gradient(135deg,#ff5fa2,#ff8fc0)">🧠</div><h3>Step-by-step teaching</h3><p>Clear steps with reasons, real-life examples, and a Hint mode that guides you without spoiling the answer.</p></div>
+<div class="fc"><div class="fi" style="background:linear-gradient(135deg,#18c29c,#2bd4ff)">🌐</div><h3>Your language</h3><p>English, Hindi, Telugu, Tamil, Kannada, Bengali and Marathi, with read-aloud.</p></div>
+<div class="fc"><div class="fi" style="background:linear-gradient(135deg,#ff9f43,#ffc76b)">📴</div><h3>Works offline</h3><p>Save lessons once, then read, listen and take quizzes with no internet.</p></div>
+<div class="fc"><div class="fi" style="background:linear-gradient(135deg,#4f8bff,#7c5cff)">🔍</div><h3>Check my work</h3><p>Send your own working and the tutor finds the first mistake and shows the fix.</p></div>
+<div class="fc"><div class="fi" style="background:linear-gradient(135deg,#f04438,#ff8a4c)">🎯</div><h3>Practice and revision</h3><p>Daily challenge, timed exams, and wrong answers that return at the right time.</p></div>
+</div></div></section>
+
+<section id="subjects" class="band"><div class="wrap"><div class="sh"><h2>Pick a subject</h2><p>Choose where to start. You can switch any time.</p></div>
+<div class="grid g3">
+<div class="sub" style="background:linear-gradient(135deg,#4f8bff,#7c5cff)"><div><h3>➗ Mathematics</h3><p>Algebra, geometry, trigonometry, statistics and more.</p></div><button data-subj="Math">Start with Math</button></div>
+<div class="sub" style="background:linear-gradient(135deg,#ff8a4c,#ff5fa2)"><div><h3>⚡ Physics</h3><p>Motion, force, energy, electricity, light and sound.</p></div><button data-subj="Physics">Start with Physics</button></div>
+<div class="sub" style="background:linear-gradient(135deg,#18c29c,#2bd4ff)"><div><h3>🧪 Chemistry</h3><p>Atoms, reactions, acids and bases, carbon compounds.</p></div><button data-subj="Chemistry">Start with Chemistry</button></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="sh"><h2>How it works</h2></div>
+<div class="grid g3"><div class="step"><div class="num">1</div><h3>Choose</h3><p class="mut">Pick your grade, subject and language.</p></div>
+<div class="step"><div class="num">2</div><h3>Ask</h3><p class="mut">Type, speak or upload a photo of your question.</p></div>
+<div class="step"><div class="num">3</div><h3>Learn and practise</h3><p class="mut">Follow the steps, take a quiz and revise later.</p></div></div></div></section>
+
+<section id="tutor" class="band"><div class="wrap"><div class="sh"><h2>Your AI tutor</h2><p>Ask a question below, open the Library for offline lessons, or try Practice and Tools.</p></div>
+<div class="appbox">
+<div class="bar"><select id="grade" aria-label="Grade"></select>
+<select id="subj" aria-label="Subject"><option>Math</option><option>Physics</option><option>Chemistry</option></select>
+<select id="lang" aria-label="Language"></select>
+<select id="pace" aria-label="Learning pace"><option value="Slow">Pace: Slow</option><option value="Normal">Pace: Normal</option><option value="Fast">Pace: Fast</option></select>
+<input id="nm" placeholder="Your name" aria-label="Your name"></div>
+<div class="tabs"><button class="tab on" data-t="chat" data-i="learn" data-e="💬">💬 Learn</button><button class="tab" data-t="lib" data-i="library" data-e="📚">📚 Library</button><button class="tab" data-t="prac" data-i="practice" data-e="🎯">🎯 Practice</button><button class="tab" data-t="tools" data-i="tools" data-e="🧰">🧰 Tools</button><button class="tab" data-t="res" data-i="resources" data-e="🔗">🔗 Resources</button><button class="tab" data-t="prog" data-i="progress" data-e="📊">📊 Progress</button></div>
+<main>
+<div id="chat" class="pane" aria-live="polite"></div>
+<div id="lib" class="pane">
+<div class="card"><b>📚 Offline Library</b><p class="mut">While online, download chapters once. They then open, speak and quiz you with no internet.</p>
+<div class="acts"><button class="chip" id="dl">⬇ Download all for offline</button><button class="chip" id="od">🧠 Install offline AI</button></div>
+<div id="dlp" class="mut" style="margin-top:6px"></div><div id="odp" class="mut"></div>
+<input id="ls" placeholder="Search chapters and notes…" aria-label="Search"></div>
+<div id="llist"></div><div id="lview" style="display:none"></div></div>
+<div id="res" class="pane">
+<div class="card"><b>🔗 Study resources</b><p class="mut">Trusted sources for students. Add your own links or notes: notes are saved on this device and used for offline answers.</p><div id="rlist"></div></div>
+<div class="card"><b>➕ Add your own source</b><input id="rt" placeholder="Title (e.g. Class 8 Science notes)"><input id="ru" placeholder="Link (optional), https://…"><textarea id="rn" rows="4" placeholder="Notes text (optional), saved offline"></textarea><button class="chip" id="radd">Add</button></div></div>
+<div id="prog" class="pane"></div><div id="prac" class="pane"></div><div id="tools" class="pane"></div>
+<div id="dock">
+<div class="acts" id="sug"></div>
+<div id="pv"><img id="pvi" alt=""><span>Image ready</span><button class="chip" id="px">✕</button></div>
+<div class="row"><button class="ib" id="img" aria-label="Upload image">📷</button><button class="ib" id="mic" aria-label="Speak">🎤</button>
+<input id="inp" placeholder="Ask a doubt…" aria-label="Question"><button class="ib go" id="snd" aria-label="Send">➤</button></div>
+<div class="acts" style="margin-top:6px"><button class="chip" id="qz" data-i="quiz" data-e="📝">📝 Quiz me</button><button class="chip" id="hint" data-i="hint" data-e="💡">💡 Hint mode</button><button class="chip" id="chk" data-i="check" data-e="🔍">🔍 Check my work</button></div>
+</div></main></div></div></section>
+
+<section id="tips"><div class="wrap"><div class="sh"><h2>Study tips that really work</h2><p>Small habits that help you learn faster and remember longer.</p></div>
+<div class="grid g4">
+<div class="tip" style="background:linear-gradient(135deg,#6d4aff,#8b7bff)"><h3>⏱ 25 + 5 rule</h3><p>Study for 25 minutes, rest for 5. After four rounds, take a longer break.</p></div>
+<div class="tip" style="background:linear-gradient(135deg,#ff5fa2,#ff8a4c)"><h3>🧠 Recall, don't re-read</h3><p>Close the book and write what you remember. Then check what you missed.</p></div>
+<div class="tip" style="background:linear-gradient(135deg,#18c29c,#2bd4ff)"><h3>🔁 Revise on a schedule</h3><p>Look at a topic again after 1, 3, 7 and 14 days. The Practice tab does this for you.</p></div>
+<div class="tip" style="background:linear-gradient(135deg,#4f8bff,#7c5cff)"><h3>😴 Sleep before exams</h3><p>Sleep helps your brain store what you learned. Avoid all-night study.</p></div>
+</div></div></section>
+
+<section id="faq" class="band"><div class="wrap"><div class="sh"><h2>Questions</h2></div><div class="faq">
+<details><summary>Can I use it without internet?</summary><p>Yes, after you save lessons in the Library. Offline you can read lessons, listen to them, take quizzes, use the formula sheet and periodic table, and get answers to many basic questions. New AI answers need internet.</p></details>
+<details><summary>Is the AI always right?</summary><p>No. AI can make mistakes. Use StudentAI to understand steps, and always check important answers with your teacher or textbook.</p></details>
+<details><summary>Which languages can I use?</summary><p>English, Hindi, Telugu, Tamil, Kannada, Bengali and Marathi. Voice input and read-aloud depend on the voices installed on your device.</p></details>
+<details><summary>Can I send a photo of my homework?</summary><p>Yes. Press the 📷 button. Turn on "Check my work" to have the tutor find the first mistake in your working.</p></details>
+</div></div></section>
+
+<footer><p style="font-weight:700;font-size:20px">StudentAI</p><p>Learn smarter. Practise daily. Keep going, even offline.</p>
+<p class="credit">Developed by Gajula Nojitha</p></footer>
+
+<input type="file" id="file" accept="image/*" hidden>
+<script src="js/content.js"></script><script src="js/data.js"></script><script src="js/api.js"></script><script src="js/app.js"></script><script src="js/features.js"></script>
+</body></html>
